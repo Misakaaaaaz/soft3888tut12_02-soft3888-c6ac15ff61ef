@@ -1,0 +1,25 @@
+.navbar {
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 40px; /* Adjust as needed */
+  }
+  
+  .navbar-nav .nav-link {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  
+  .navbar-nav .nav-link.active {
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link.disabled {
+    color: #6c757d; /* Adjust color for disabled state */
+  }

@@ -1,0 +1,41 @@
+config:
+  target: 'http://localhost:3333' # Adjust to match your server's URL
+  phases:
+    - duration: 60      # Run the test for 60 seconds
+      arrivalRate: 5     # Start with 5 new users per second
+    - duration: 120     # Increase load
+      arrivalRate: 20
+
+scenarios:
+  - name: List Users
+    flow:
+      - get:
+          url: "/users?page=1"
+
+  - name: Search Users
+    flow:
+      - get:
+          url: "/users?search=John&page=1"
+
+  - name: Create User
+    flow:
+      - post:
+          url: "/users"
+          json:
+            firstName: "John"
+            lastName: "Doe"
+            email: "john.doe@example.com"
+            profile: "admin"
+            access: "full"
+            userSchoolId: 1
+            relatedUsers: []
+
+  - name: View User Details
+    flow:
+      - get:
+          url: "/users/1"
+
+  - name: Delete User
+    flow:
+      - delete:
+          url: "/users/1"

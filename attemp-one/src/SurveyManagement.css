@@ -1,0 +1,50 @@
+.table-container {
+    max-width: 1300px; /* Adjust to your desired maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Optional: Add padding around the container */
+  }
+  
+  .table {
+    width: 100%; /* Make the table responsive within the container */
+    border-collapse: collapse; /* Optional: Improve border handling */
+    border: 2px solid #dee2e6;
+  }
+  
+  .table th, .table td {
+    padding: 10px; /* Adjust padding for table cells */
+    text-align: left; /* Align text to the left, adjust as needed */
+    border: 1px solid #dee2e6; 
+  }
+  
+  .table thead {
+    background-color: #f8f9fa; /* Optional: Style the table header */
+    border-bottom: 2px solid #dee2e6; /* Border below the header */
+  }
+
+
+form {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+  }
+  
+  form .form-label {
+    margin-bottom: 0.5rem;
+  }
+  
+  form .form-control {
+    margin-bottom: 1rem;
+  }
+  
+  .btn {
+    margin-right: 0.5rem;
+  }
+
+  .btn {
+    margin-right: 0.5rem;
+  }
+  
+  input.form-control {
+    margin-bottom: 1rem;
+  }

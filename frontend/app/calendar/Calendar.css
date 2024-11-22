@@ -1,0 +1,156 @@
+.calendar-container {
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  width: 100%; 
+  font-size: 18px; 
+}
+
+.nav-button {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  flex: 1;
+  padding: 5px 5px; 
+  width: 30px; 
+  border-radius: 4px;
+  text-align: center;
+  margin: 0 20px; 
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 40px;
+  margin-top: 10px;
+  width: 100%; 
+}
+
+.day-header {
+  text-align: center;
+  font-weight: bold;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.calendar-cell {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  text-align: center; 
+}
+
+.calendar-cell .date {
+  font-weight: bold;
+}
+
+.calendar-cell .events {
+  margin-top: 5px;
+}
+
+.events {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 5px; 
+  position: absolute;
+  bottom: 5px; 
+  left: 5px; 
+}
+
+.event-form h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background-color: #f7f9fc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #cfd4da;
+  border-radius: 5px;
+  background-color: #eef2f7;
+  font-size: 1rem;
+}
+
+.modal-add-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #a7c4e2;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+  margin-top: 15px;
+}
+
+.event-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.modal-delete-button {
+  background-color: #f44336; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px;
+  text-align: center; 
+  font-size: 16px; 
+  margin: 5px 0; 
+  border-radius: 5px; 
+}
+
+.modal-delete-button:hover {
+  background-color: #c62828; 
+}
